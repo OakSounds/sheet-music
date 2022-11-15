@@ -1,0 +1,71 @@
+\header {
+  title = "I Want to Hold Your Hand"
+  composer = "The Beatles/T.V. Carpio"
+}
+
+
+  SopranoMusic = \relative { 
+    \tempo 4 = 80
+    \key d \major
+    r2 r4 b' |
+    \repeat volta 2 {
+    \repeat volta 2 { a8. g16 fis4 r4 8 a | fis4 e r2 | }
+      \alternative {
+        {r8 fis8 8 8 4 4 | cis2 r4 b' |}
+        {r8 fis8 8 8 4 8 cis'8~ | cis1 |}
+      } 
+    r8 d8 cis b a4 g | a8. g16 fis8. e16 fis e d8 r4 | r8 d'8 cis b a4 e | 
+    } \alternative{
+        {d2 r4 b' | }
+        {d,2 r2 | }
+        }
+    
+  }
+  SopranoLyricsOne = \lyricmode {
+    \set stanza = "1."
+Yeah I -- I -- I tell you some -- thin'
+I think you'll und -- er -- stand When 
+I want to hold your hand
+I want to hold your ha -- a -- a -- a -- a -- a -- nd
+I want to hold your hand
+  }
+  SopranoLyricsTwo = \lyricmode {
+   \skip 4 
+I -- I -- I say that some -- thin'
+  }
+    SopranoLyricsThree = \lyricmode {
+    \set stanza = "2."  \skip 4
+ple -- e -- ase say to m -- e
+You'll let me be your man
+And 
+You'll let me hold your hand 
+Now, let me hold your ha -- a -- a -- a -- a -- a -- nd
+I want to hold your hand }
+  SopranoLyricsFour = \lyricmode {
+    \skip 4 
+ple -- e -- ase say to m -- e  }
+  AltoMusic = \relative { 
+  \key d \major
+  r1 | r4 d'8 r8 r4 d8 r8| r4 cis8 r8 r4 cis8 r8 | r4 d8 r8 r4 d8 r8| r4 cis8 r8 r4 cis8 r8 | r4 d8 r8 r4 d8 r8| r4 cis8 r8 r4 cis8 r8 |
+  d2 e | fis e4 d | d2 e | r1|fis2.  <fis a>4 |
+
+  <e g>2 r |
+}
+  AltoLyrics = \lyricmode { Al -- to ly -- rics }
+  TenorMusic = \relative {
+  \key d \major
+  r1 | r8 a r a r a r a | r8 a r a r a r a |r8 b r b r b r b |r8 b r b r b r b |r8 b r b r b r b |r8 b r b r b r b | 
+  b2 cis | d1 | b2 cis | r1|d2.  d4 |
+
+  c2 r |
+ }
+  TenorLyrics = \lyricmode { Te -- nor ly -- rics }
+  BassMusic = \relative { 
+  \key d \major
+  d8 8 8 8 8 8 8 8 | 
+  d8 8 8 8 8 8 8 8 |a8 8 8 8 8 8 16 gis a ais | b8 8 8 8 8 8 8 8 | fis8 8 8 8 8 8 8 8 | b8 8 8 8 8 8 8 8 | fis8 8 8 8 8 8 8 8
+  g8 8 8 8 a8 8 8 8 | d8 8 8 8 b8 8 8 8 | g8 8 8 8 a8 8 8 8 | d8 8 8 8 2 | d8 8 8 8 4 4 | 
+  
+  a1 | d | g, | e | a1 | d | g2 r8 g g4 | a2 r8 g g4 | a2 r8 g g4| a4. 8 4. 8 | 4. 8 4. 8 |}
+  BassLyrics = \lyricmode { Bass ly -- rics }
+  \include "satb.ly"
