@@ -51,7 +51,9 @@ ple -- e -- ase say to m -- e  }
 
   <e g>2 r |
 }
-  AltoLyrics = \lyricmode { Al -- to ly -- rics }
+  AltoLyricsOne = \lyricmode { \set stanza = "1." tacet}
+  AltoLyricsTwo = \lyricmode { \set stanza = "1." do do do do sim.}
+  
   TenorMusic = \relative {
   \key d \major
   r1 | r8 a r a r a r a | r8 a r a r a r a |r8 b r b r b r b |r8 b r b r b r b |r8 b r b r b r b |r8 b r b r b r b | 
